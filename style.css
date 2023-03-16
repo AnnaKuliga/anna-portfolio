@@ -36,13 +36,82 @@ a:hover {
 img {
   width: 100%;
 }
+.bg-base {
+  background-color: var(--color-base);
+  border-radius: 8px;
+}
+.btn {
+  padding: 12px 28px;
+  font-weight: 700;
+}
+.btn-brand {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+}
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--color-brand2);
+  color: var(--color-base);
+}
+.custom-link {
+  font-weight: 700;
+  position: relative;
+}
+.custom-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-brand);
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+}
+.custom-link:hover::after {
+  width: 100%;
+}
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.iconbox {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: var(--color-brand);
+  color: var(--color-base);
+  border-radius: 14px;
+}
+.shadow-effect {
+  transition: all 0.5s;
+}
+.shadow-effect:hover {
+  box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+.text-brand {
+  color: var(--color-brand);
+}
 /*Navbar*/
+.navbar {
+  background-color: var(--color-base);
+}
 .navbar .nav-link {
   font-weight: 700;
   text-transform: uppercase;
   color: white;
 }
 .navbar .nav-link:hover {
+  color: var(--color-brand);
+}
+.navbar .nav-link.active {
   color: var(--color-brand);
 }
 @media (min-width: 992px) {
@@ -56,5 +125,9 @@ img {
   }
   .navbar-brand img {
     border: 8px solid rgba(254, 247, 175, 0.6);
+  }
+  /*Content Wrapper */
+  #content-wrapper {
+    padding-left: var(--sidebar-width);
   }
 }
