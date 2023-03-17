@@ -179,7 +179,7 @@ img {
     background-position: center;
   }
   .navbar-brand img {
-    border: 8px solid rgba(254, 247, 175, 0.6);
+    border: 8px solid var(--color-heading);
   }
   /*Content Wrapper */
   #content-wrapper {
