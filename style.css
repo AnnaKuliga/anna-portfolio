@@ -39,6 +39,21 @@ img {
 #about p {
   text-align: justify;
 }
+#contact .form-control {
+  background-color: var(--color-base);
+  border-color: var(--color-base);
+  color: var(--color-body);
+}
+#contact .form-control:focus {
+  border-color: var(--color-brand);
+  box-shadow: none;
+}
+#contact .form-control::placeholder {
+  color: var(--color-body);
+}
+#contact input.form-control {
+  height: 46px;
+}
 #more {
   display: none;
 }
@@ -150,5 +165,21 @@ img {
   /*Content Wrapper */
   #content-wrapper {
     padding-left: var(--sidebar-width);
+  }
+}
+@media (max-width: 900px) {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+  p {
+    font-size: 13px;
+  }
+
+  .custom-link {
+    font-size: 12px;
   }
 }
