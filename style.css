@@ -82,7 +82,6 @@ img {
 }
 .card-custom .card-custom-image img {
   transition: all 0.4s ease;
-  max-with: 150px;
 }
 .card-custom:hover .card-custom-image img {
   transform: scale(1.1);
@@ -150,6 +149,17 @@ img {
 .navbar .nav-link.active {
   color: var(--color-brand);
 }
+.social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-base);
+  border-radius: 100%;
+  font-size: 24px;
+}
+
 @media (min-width: 992px) {
   .navbar {
     min-height: 100vh;
