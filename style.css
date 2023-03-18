@@ -97,6 +97,9 @@ img {
 .contact {
   padding: 40px 30px;
 }
+.contact-media {
+  text-align: right;
+}
 .custom-link {
   font-weight: 700;
   position: relative;
@@ -113,6 +116,10 @@ img {
 }
 .custom-link:hover::after {
   width: 100%;
+}
+.download {
+  margin-top: 30px;
+  text-align: right;
 }
 .full-height {
   min-height: 100vh;
@@ -134,7 +141,10 @@ img {
   color: var(--color-base);
   border-radius: 14px;
 }
-
+.git {
+  font-size: 30px;
+  text-align: right;
+}
 .navbar {
   background-color: var(--color-base);
 }
@@ -169,10 +179,7 @@ img {
 .shadow-effect:hover {
   box-shadow: -6px 6px 0 0 var(--color-brand);
 }
-.download {
-  margin-top: 30px;
-  text-align: right;
-}
+
 .social-links a {
   width: 40px;
   height: 40px;
