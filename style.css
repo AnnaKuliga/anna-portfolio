@@ -143,6 +143,9 @@ img {
 .navbar .nav-link.active {
   color: var(--color-brand);
 }
+.programming h4 {
+  font-size: 20px;
+}
 
 .shadow-effect {
   transition: all 0.5s;
